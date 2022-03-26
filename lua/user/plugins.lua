@@ -61,8 +61,9 @@ return packer.startup(function(use)
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use "lunarvim/darkplus.nvim"
-  --use 'folke/tokyonight.nvim'
+  --use "lunarvim/darkplus.nvim"
+   --  use 'folke/tokyonight.nvim'
+  use "olimorris/onedarkpro.nvim"
   --use 'lunarvim/onedarker.nvim'
   --use 'navarasu/onedark.nvim'
   -- cmp plugins
@@ -84,6 +85,16 @@ return packer.startup(function(use)
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   -- rustlsp 
   use "simrat39/rust-tools.nvim"
+  use 'nvim-lua/plenary.nvim'
+  use 'mfussenegger/nvim-dap'
+  use {
+    'saecki/crates.nvim',
+    tag = 'v0.1.0',
+    requires = { 'nvim-lua/plenary.nvim' },
+    config = function()
+        require('crates').setup()
+    end,
+}
   -- coc 
   -- use {'neoclide/coc.nvim', branch = 'release'}
   -- Telescope
