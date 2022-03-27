@@ -1,0 +1,22 @@
+vim.g.coc_global_extensions = {
+  'coc-json', 
+  'coc-git',
+  'coc-rust-analyzer',
+  'coc-css',
+  'coc-cssmodules',
+  'coc-docker',
+  'coc-eslint',
+'coc-flutter',
+'coc-go',
+'coc-highlight',
+'coc-html',
+'coc-html-css-support',
+'coc-json',
+'coc-sh',
+'coc-sumneko-lua',
+'coc-sql',
+'coc-sumneko-lua',
+'coc-toml',
+'coc-snippets',
+
+}
